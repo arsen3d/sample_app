@@ -1,0 +1,107 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{f33ec436-ffb5-4404-bde4-c30ef2605a07}</ProjectGuid>
+    <RailsProject>True</RailsProject>
+    <RailsActionView>
+      <Include>ActionView::Helpers::ActiveRecordHelper</Include>
+      <Include>ActionView::Helpers::AssetTagHelper</Include>
+      <Include>ActionView::Helpers::DateHelper</Include>
+      <Include>ActionView::Helpers::FormHelper</Include>
+      <Include>ActionView::Helpers::FormOptionsHelper</Include>
+      <Include>ActionView::Helpers::FormTagHelper</Include>
+      <Include>ActionView::Helpers::JavaScriptHelper</Include>
+      <Include>ActionView::Helpers::NumberHelper</Include>
+      <Include>ActionView::Helpers::PaginationHelper</Include>
+      <Include>ActionView::Helpers::TagHelper</Include>
+      <Include>ActionView::Helpers::UrlHelper</Include>
+    </RailsActionView>
+    <RailsDebugScript>C:\ProgramData\SapphireSteel Software\Ruby In Steel 2010\Scripts\webrick_service.rb</RailsDebugScript>
+    <RubyInterpreter>C:\Ruby192\bin\ruby.exe</RubyInterpreter>
+    <RubyType>Ruby 1.9.2</RubyType>
+    <ServerPort>3000</ServerPort>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="app\assets\images\rails.png" />
+    <Content Include="app\assets\javascripts\application.js" />
+    <Content Include="app\assets\stylesheets\application.css" />
+    <Content Include="app\controllers\application_controller.rb" />
+    <Content Include="app\helpers\application_helper.rb" />
+    <Content Include="app\views\layouts\application.html.erb" />
+    <Content Include="config.ru" />
+    <Content Include="config\application.rb" />
+    <Content Include="config\boot.rb" />
+    <Content Include="config\database.yml" />
+    <Content Include="config\environment.rb" />
+    <Content Include="config\environments\development.rb" />
+    <Content Include="config\environments\production.rb" />
+    <Content Include="config\environments\test.rb" />
+    <Content Include="config\initializers\backtrace_silencers.rb" />
+    <Content Include="config\initializers\inflections.rb" />
+    <Content Include="config\initializers\mime_types.rb" />
+    <Content Include="config\initializers\secret_token.rb" />
+    <Content Include="config\initializers\session_store.rb" />
+    <Content Include="config\initializers\wrap_parameters.rb" />
+    <Content Include="config\locales\en.yml" />
+    <Content Include="config\routes.rb" />
+    <Content Include="db\seeds.rb" />
+    <Content Include="doc\README_FOR_APP" />
+    <Content Include="Gemfile" />
+    <Content Include="Gemfile.lock" />
+    <Content Include="public\404.html" />
+    <Content Include="public\422.html" />
+    <Content Include="public\500.html" />
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\index.html" />
+    <Content Include="public\robots.txt" />
+    <Content Include="Rakefile" />
+    <Content Include="README" />
+    <Content Include="script\rails" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\assets\" />
+    <Folder Include="app\assets\images\" />
+    <Folder Include="app\assets\javascripts\" />
+    <Folder Include="app\assets\stylesheets\" />
+    <Folder Include="app\controllers\" />
+    <Folder Include="app\helpers\" />
+    <Folder Include="app\mailers\" />
+    <Folder Include="app\models\" />
+    <Folder Include="app\views\" />
+    <Folder Include="app\views\layouts\" />
+    <Folder Include="config\" />
+    <Folder Include="config\environments\" />
+    <Folder Include="config\initializers\" />
+    <Folder Include="config\locales\" />
+    <Folder Include="db\" />
+    <Folder Include="doc\" />
+    <Folder Include="lib\" />
+    <Folder Include="lib\assets\" />
+    <Folder Include="lib\tasks\" />
+    <Folder Include="log\" />
+    <Folder Include="public\" />
+    <Folder Include="script\" />
+    <Folder Include="tmp\" />
+    <Folder Include="tmp\cache\" />
+    <Folder Include="tmp\cache\assets\" />
+    <Folder Include="vendor\" />
+    <Folder Include="vendor\assets\" />
+    <Folder Include="vendor\assets\stylesheets\" />
+    <Folder Include="vendor\plugins\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SapphireSteel Software\Ruby In Steel 2010\RubyInSteel.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
