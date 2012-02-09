@@ -58,6 +58,7 @@
     <Content Include="public\404.html" />
     <Content Include="public\422.html" />
     <Content Include="public\500.html" />
+    <Content Include="public\Copy of index.html" />
     <Content Include="public\favicon.ico" />
     <Content Include="public\index.html" />
     <Content Include="public\robots.txt" />
